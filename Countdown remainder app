@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Events App</title>
+    <!-- Add your CSS styles here -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #countdown-container {
+            margin-top: 50px;
+        }
+
+        #event-name-input {
+            margin-bottom: 10px;
+        }
+
+        #countdown {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #customize-form {
+            margin-top: 20px;
+        }
+
+        #customize-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #customize-form input {
+            margin-bottom: 10px;
+        }
+
+        #start-countdown-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #start-countdown-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Countdown Events App</h1>
+    <div id="countdown-container">
+        <label for="event-name-input">Event Name:</label>
+        <input type="text" id="event-name-input" placeholder="Enter event name">
+
+        <div id="countdown">00:00:00</div>
+
+        <form id="customize-form">
+            <label for="event-date-input">Event Date:</label>
+            <input type="datetime-local" id="event-date-input" required>
+
+            <label for="background-color-input">Background Color:</label>
+            <input type="color" id="background-color-input" value="#ffffff">
+
+            <label for="text-color-input">Text Color:</label>
+            <input type="color" id="text-color-input" value="#333333">
+
+            <button type="button" id="start-countdown-btn">Start Countdown</button>
+        </form>
+    </div>
+
+    <!-- Add your JavaScript code here -->
+    <script>
+        // Add your countdown functionality and customization logic here
+        document.getElementById('start-countdown-btn').addEventListener('click', function () {
+            // Implement countdown logic using JavaScript
+            // You can use Date object to calculate the time remaining
+            // Update the #countdown element with the calculated time remaining
+        });
+    </script>
+</body>
+</html>
